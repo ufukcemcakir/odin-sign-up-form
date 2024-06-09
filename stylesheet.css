@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+  }
+  html{
+    width: 100%;
+    height: 100%;
+  }
+.container{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.left-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.background{
+width: 350px;
+height: auto;
+}
+.logo-image{
+    width: 75px;
+    height: auto;
+    z-index: 1;
+    margin-left: 85px;
+}
+.logo{
+    grid-row: 2;
+    grid-column: 1;
+    color: antiquewhite;
+    background-color: rgba(5, 5, 29, 0.404);
+    justify-self: stretch;
+}
+.back-image{
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+.odin{
+    display: inline;
+    font-size: 90px;
+    font-family: Norse-Bold;
+    color: antiquewhite;
+}
+.header, .footer, .form{
+    width: 70%;
+    height: 33%;
+}
+.header{
+    align-content: flex-end;
+    background-color: rgba(128, 128, 128, 0.05);
+    border-radius: 10px;
+}
+.footer{
+    box-shadow: 1px 1px 1px lightgray inset;
+    padding-top: 10px;
+}
+button{
+    background-color: #596D48;
+    width: 200px;
+    height: 40px;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+.footer-text, .text, .names, .mail-phone{
+margin-left: 5%;
+}
+.jumbo{
+    margin-left: 3.5%;
+    align-content: flex-end;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-content: flex-start;
+}
+input{
+    width: 200px;
+}
+:focus{
+    border: blue;
+}
+a{
+    color: #596D48;
+}
+label{
+    font-size: 10px;
+}
+input:invalid {
+    border: 1px solid red;
+  }
+  
